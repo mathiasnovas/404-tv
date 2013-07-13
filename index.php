@@ -1,12 +1,16 @@
-<?php header('HTTP/1.0 404 Not Found'); ?>
+<?php 
+    header('HTTP/1.0 404 Not Found');
+    $baseUri = $_SERVER['REQUEST_URI'];
+?>
 <!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <title>404 tv</title>
-        <link rel="stylesheet" href="/404/style.css">
+        <link rel="stylesheet" href=<?php echo $baseUri . 'style.css'; ?>>
         <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="/404/js/marquee.js"></script>
+        <script src=<?php echo $baseUri . 'js/marquee.js';?>></script>
+        <script src=<?php echo $baseUri . 'js/script.js';?>></script>
     </head>
     <body>
         <div class="tv">
