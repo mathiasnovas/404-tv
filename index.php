@@ -1,6 +1,6 @@
 <?php 
     header('HTTP/1.0 404 Not Found');
-    $baseUri = $_SERVER['REQUEST_URI'];
+    $baseUri = '//' . $_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']) . '/';
 ?>
 <!doctype html>
 <html lang="en">
