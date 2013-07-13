@@ -22,17 +22,5 @@
             </div>
             <div class="brand">philips</div>
         </div>
-        <script>
-        $(document).ready(function () {
-            console.log($('.marquee'));
-            $('.marquee').marquee({
-                speed: 15000,
-                gap: 50,
-                delayBeforeStart: 0,
-                direction: 'left',
-                duplicated: true
-            });
-        });
-        </script>
     </body>
 </html>
