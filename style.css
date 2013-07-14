@@ -12,11 +12,13 @@ body {
 }
 
 .tv {
-    bottom: 20px;
+    bottom: 0;
+    height: 460px;
     left: 0;
-    margin: 0 auto;
+    margin: -230px auto 0;
     position: absolute;
     right: 0;
+    top: 50%;
     width: 500px;
 }
     .tv .frame {
@@ -39,7 +41,7 @@ body {
         animation: flicker .3s infinite;
     }
     .tv .image {
-        background: url('images/yeah.gif') no-repeat 0 50% #000;
+        background: none no-repeat 0 50% #000;
         border-radius: 50px;
         box-shadow: inset 0 0 20px #000;
         height: 370px;
