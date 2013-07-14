@@ -1,6 +1,11 @@
-<?php 
+<?php
     header('HTTP/1.0 404 Not Found');
     $baseUri = '//' . $_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']) . '/';
+    $images = array(
+        'coolkid_rev',
+        'coolkid',
+        'yeah'
+    );
 ?>
 <!doctype html>
 <html lang="en">
@@ -17,7 +22,7 @@
             <div class="frame">
                 <div class="second-frame">
                     <div class="monitor">
-                        <div class="image">
+                        <div class="image" style="background-image:url('images/<?php echo $images[array_rand($images)]; ?>.gif')">
                             <div class="marquee">Du er fortapt. You're lost. Estás perdido. είσαι χαμένος. 你都将丢失。Vous êtes perdu. 당신이 손실됩니다. вы потеряли. Ikaw ay mawawala. あなたは失われます。</marquee>
                         </div>
                     </div>
