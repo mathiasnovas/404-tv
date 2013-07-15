@@ -10,7 +10,7 @@
     <head>
         <meta charset="utf-8">
         <title>404 tv</title>
-        <link rel="stylesheet" href=<?php echo $baseUri . 'style.css'; ?>>
+        <link rel="stylesheet" href=<?php echo $baseUri . 'css/style.css'; ?>>
         <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src=<?php echo $baseUri . 'js/marquee.js';?>></script>
         <script src=<?php echo $baseUri . 'js/script.js';?>></script>

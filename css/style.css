@@ -3,7 +3,7 @@ body, html {
     padding: 0;
 }
 body {
-    background: url('images/bg.jpg');
+    background: url('../images/bg.jpg');
 }
 
 .marquee {
@@ -42,6 +42,7 @@ body {
     }
     .tv .image {
         background: none no-repeat 0 50% #000;
+        background-size: 100%;
         border-radius: 50px;
         box-shadow: inset 0 0 20px #000;
         height: 370px;
