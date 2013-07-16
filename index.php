@@ -1,9 +1,9 @@
 <?php
     header('HTTP/1.0 404 Not Found');
     $baseUri = '//' . $_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']) . '/';
-    $images = array_filter(scandir('images/tv'), function($file) {
-        return strpos($file, '.') !== 0;
-    });
+    // $images = array_filter(scandir('images/tv'), function($file) {
+    //     return strpos($file, '.') !== 0;
+    // });
 ?>
 <!doctype html>
 <html lang="en">
@@ -13,6 +13,7 @@
         <link rel="stylesheet" href=<?php echo $baseUri . 'css/style.css'; ?>>
         <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src=<?php echo $baseUri . 'js/marquee.js';?>></script>
+        <script src=<?php echo $baseUri . 'js/reddit.js';?>></script>
         <script src=<?php echo $baseUri . 'js/script.js';?>></script>
     </head>
     <body>
@@ -20,7 +21,7 @@
             <div class="frame">
                 <div class="second-frame">
                     <div class="monitor">
-                        <div class="image" style="background-image:url('images/tv/<?php echo $images[array_rand($images)]; ?>')">
+                        <div class="image">
                             <div class="marquee">Du er fortapt. You're lost. Estás perdido. είσαι χαμένος. 你都将丢失。Vous êtes perdu. 당신이 손실됩니다. вы потеряли. Ikaw ay mawawala. あなたは失われます。</marquee>
                         </div>
                     </div>
