@@ -1,9 +1,6 @@
 <?php
     header('HTTP/1.0 404 Not Found');
     $baseUri = '//' . $_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']) . '/';
-    // $images = array_filter(scandir('images/tv'), function($file) {
-    //     return strpos($file, '.') !== 0;
-    // });
 ?>
 <!doctype html>
 <html lang="en">
@@ -28,7 +25,7 @@
                 </div>
                 <div class="logo">404 <strong>tv</strong></div>
             </div>
-            <div class="brand">philips</div>
+            <div class="brand">sony</div>
         </div>
     </body>
 </html>
