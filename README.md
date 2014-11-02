@@ -1,4 +1,4 @@
 404-tv
 ======
 
-You can [check out the demo here.](http://node-cat.com/404-tv/) 
+You can [check out the demo here.](http://mathiasnovas.github.io/404-tv/) 
