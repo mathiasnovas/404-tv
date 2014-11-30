@@ -19,8 +19,14 @@
                 },
                 success: function (data) {
                     if (data.data.children.length > 0) {
-                        var random = Math.floor(Math.random()*10)+1;
-                        app.render(data.data.children[random].data);
+                        var isGif = function (el) {
+                            return el.data.url.match(/gif$/);
+                        }
+
+                        var filtered = data.data.children.filter(isGif),
+                            rand = filtered[Math.floor(Math.random() * filtered.length)];
+
+                        app.render(rand.data);
                     }
                 }
             });
@@ -30,7 +36,6 @@
             var screen = $('.image');
             screen.css('background-image', 'url("' + data.url + '")');
         }
-
     }
 
     app.init();
