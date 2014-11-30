@@ -8,7 +8,7 @@
 
         fetch: function () {
             $.ajax({
-                url: 'http://reddit.com/r/perfectloops/hot.json',
+                url: '//reddit.com/r/perfectloops/hot.json',
                 type: 'GET',
                 dataType: 'jsonp',
                 jsonp: 'jsonp',
