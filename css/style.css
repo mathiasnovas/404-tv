@@ -50,7 +50,8 @@ body {
         position: relative;
     }
     .tv:hover .image {
-        background-size: 500%;
+        background-size: 200%;
+        background-position: 50% 50%;
     }
     .tv .logo {
         background: rgba(0,0,0,.3);
